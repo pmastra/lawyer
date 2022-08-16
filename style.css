@@ -336,6 +336,12 @@ h3 {
     font-size: 62px;
 }
 
+.sub-header p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
 .location {
     width: 80%;
     margin: auto;

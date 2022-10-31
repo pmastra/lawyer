@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Estudio Mayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="index.html#course">SERVICIOS</a></li>
+                    <li><a href="index.html#facilities">BENEFICIOS</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contactenos</h1>
+        <p>Ante cualquier duda puede contactarnos y nosotros sabremos ayudarlo por los siguientes medios. <br> Tambien asesoramos online</p>
+    </section>
+    <!--------Contact---------->
+
+    <section class="contact-us">
+
+        <div class="contact-col">
+            <img src="images/familia2.jpg">
+        </div>
+
+    </section>
+
+    <!--------Footer---------->
+
+    <section class="footer">
+        <h4>Acerca de Nosotros</h4>
+        <p>Somos un estudio joven que se dedica a casos de Familia, civil y laborales. <br> Tambien asesoramos online</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Hecho por <i class="fa fa-linkedin"></i> /agustin-mastracci</p>
+    </section>
+
+    <!--------Javascript menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

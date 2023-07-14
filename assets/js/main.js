@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
     "use strict";
 
@@ -9,14 +9,14 @@ $(function () {
 
     //===== Sticky
 
-    $(window).on('scroll', function (event) {
+    $(window).on('scroll', function(event) {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/karate-logo-white.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/Estudio-Logo.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/karate-logo.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/Estudio-Logo.png");
         }
     });
 
@@ -26,10 +26,10 @@ $(function () {
 
     var scrollLink = $('.page-scroll');
     // Active link switching
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scrollbarLocation = $(this).scrollTop();
 
-        scrollLink.each(function () {
+        scrollLink.each(function() {
 
             var sectionOffset = $(this.hash).offset().top - 73;
 
@@ -43,16 +43,16 @@ $(function () {
 
     //===== close navbar-collapse when a  clicked
 
-    $(".navbar-nav a").on('click', function () {
+    $(".navbar-nav a").on('click', function() {
         $(".navbar-collapse").removeClass("show");
     });
 
-    $(".navbar-toggler").on('click', function () {
+    $(".navbar-toggler").on('click', function() {
         $(this).toggleClass("active");
         $(".navbar-collapse").toggleClass("show");
     });
 
-    $(".navbar-nav a").on('click', function () {
+    $(".navbar-nav a").on('click', function() {
         $(".navbar-toggler").removeClass('active');
     });
 
@@ -67,8 +67,7 @@ $(function () {
         centerPadding: "0",
         slidesToShow: 3,
         slidesToScroll: 4,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
@@ -100,7 +99,7 @@ $(function () {
     //===== Back to top
 
     // Show or hide the sticky footer button
-    $(window).on('scroll', function (event) {
+    $(window).on('scroll', function(event) {
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200);
         } else {
@@ -110,7 +109,7 @@ $(function () {
 
 
     //Animate the scroll to yop
-    $('.back-to-top').on('click', function (event) {
+    $('.back-to-top').on('click', function(event) {
         event.preventDefault();
 
         $('html, body').animate({

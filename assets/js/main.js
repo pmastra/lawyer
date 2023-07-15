@@ -13,7 +13,7 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/Estudio-Logo.png");
+            $(".navbar .navbar-brand img").attr("src", "assets/images/Estudio-Logo-grey.png");
         } else {
             $(".navbar-area").addClass("sticky");
             $(".navbar .navbar-brand img").attr("src", "assets/images/Estudio-Logo.png");

@@ -736,7 +736,7 @@ video {
 
 .focus\:border-theme-color:focus {
     --border-opacity: 1;
-    border-color: #361cc1;
+    border-color: #556B2F;
     border-color: rgba(54, 28, 193, var(--border-opacity));
 }
 
@@ -1065,26 +1065,26 @@ video {
 
 .text-theme-color {
     --text-opacity: 1;
-    color: #361cc1;
-    color: rgba(54, 28, 193, var(--text-opacity));
+    color: #556B2F;
+    color: rgba(85, 107, 47, var(--text-opacity));
 }
 
 .text-theme-color-2 {
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .hover\:text-theme-color:hover {
     --text-opacity: 1;
-    color: #361cc1;
-    color: rgba(54, 28, 193, var(--text-opacity));
+    color: #556B2F;
+    color: rgba(85, 107, 47, var(--text-opacity));
 }
 
 .hover\:text-theme-color-2:hover {
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .w-40 {
@@ -1322,18 +1322,18 @@ p {
 .sticky .navbar-nav .nav-item.active a,
 .sticky .navbar-nav .nav-item a:hover {
     --text-opacity: 1;
-    color: #361cc1;
-    color: rgba(54, 28, 193, var(--text-opacity));
+    color: #556B2F;
+    color: rgba(85, 107, 47, var(--text-opacity));
 }
 
 .gradient-btn {
-    background-image: linear-gradient( to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+    background-image: linear-gradient( to right, #556B2F 0%, #6B8E23 50%, #556B2F 100%);
     background-size: 200% auto;
     overflow: hidden;
 }
 
 .gradient-btn-2 {
-    background-image: linear-gradient( to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+    background-image: linear-gradient( to right, #556B2F 0%, #6B8E23 50%, #556B2F 100%);
 }
 
 .gradient-btn:hover {
@@ -1353,15 +1353,15 @@ p {
     color: rgba(255, 255, 255, var(--text-opacity));
     transition-duration: 300ms;
     --bg-opacity: 1;
-    background-color: #3182ce;
-    background-color: rgba(49, 130, 206, var(--bg-opacity));
+    background-color: #556B2F;
+    background-color: rgba(85, 107, 47, var(--bg-opacity));
     border-radius: 0.5rem;
 }
 
 .main-btn:hover {
     --bg-opacity: 1;
-    background-color: #63b3ed;
-    background-color: rgba(99, 179, 237, var(--bg-opacity));
+    background-color: #9da837;
+    background-color: rgba(157, 168, 55, var(--bg-opacity));
 }
 
 .header-hero {
@@ -1391,7 +1391,7 @@ p {
 }
 
 .section-title .line {
-    background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+    background: linear-gradient(#556B2F 0%, #6B8E23 100%);
     width: 10rem;
     height: 0.25rem;
     margin-bottom: 0.75rem;
@@ -1428,8 +1428,8 @@ p {
 
 .single-services:hover {
     --border-opacity: 1;
-    border-color: #fe7a7b;
-    border-color: rgba(254, 122, 123, var(--border-opacity));
+    border-color: #9da837;
+    border-color: rgba(157, 168, 55, var(--border-opacity));
 }
 
 .services-icon {
@@ -1496,8 +1496,8 @@ p {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
     border-radius: 9999px;
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .single-counter {
@@ -1530,15 +1530,15 @@ p {
 }
 
 .counter-color-1::before {
-    background-image: linear-gradient(#33c8c1 0%, #119bd2 100%);
+    background-image: linear-gradient(#556B2F 0%, #6B8E23 100%);
 }
 
 .counter-color-2::before {
-    background-image: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+    background-image: linear-gradient(#6B8E23 0%, #556B2F 100%);
 }
 
 .counter-color-3::before {
-    background-image: linear-gradient(#361cc1 0%, #2e82ef 100%);
+    background-image: linear-gradient(#9da837 0%, #7cb342 100%);
 }
 
 .single-team {
@@ -1579,7 +1579,7 @@ p {
 
 .team-social ul::before {
     content: "";
-    background-image: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+    background-image: linear-gradient(#556B2F 0%, #6B8E23 100%);
     z-index: -1;
     position: absolute;
     top: 0;
@@ -1610,8 +1610,8 @@ p {
 
 .team-social ul a:hover {
     --text-opacity: 1;
-    color: #361cc1;
-    color: rgba(54, 28, 193, var(--text-opacity));
+    color: #556B2F;
+    color: rgba(85, 107, 47, var(--text-opacity));
 }
 
 .single-testimonial {
@@ -1636,15 +1636,15 @@ p {
 .slick-current .single-testimonial,
 .single-testimonial:hover {
     --border-opacity: 1;
-    border-color: #fe7a7b;
-    border-color: rgba(254, 122, 123, var(--border-opacity));
+    border-color: #9da837;
+    border-color: rgba(157, 168, 55, var(--border-opacity));
 }
 
 .slick-current .single-testimonial .quota i,
 .single-testimonial:hover .quota i {
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .author-image .author {
@@ -1695,8 +1695,8 @@ p {
     border-radius: 9999px;
     opacity: 0.25;
     --bg-opacity: 1;
-    background-color: #fe7a7b;
-    background-color: rgba(254, 122, 123, var(--bg-opacity));
+    background-color: #9da837;
+    background-color: rgba(157, 168, 55, var(--bg-opacity));
 }
 
 .slick-dots .slick-active button,
@@ -1757,8 +1757,8 @@ p {
 
 .footer-social li a:hover {
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .contact li {
@@ -1779,12 +1779,12 @@ p {
 
 .link li a:hover {
     --text-opacity: 1;
-    color: #fe7a7b;
-    color: rgba(254, 122, 123, var(--text-opacity));
+    color: #9da837;
+    color: rgba(157, 168, 55, var(--text-opacity));
 }
 
 .back-to-top {
-    background-image: linear-gradient(to right, #361cc1 0%, #2e82ef 100%);
+    background-image: linear-gradient(to right, #556B2F 0%, #6B8E23 100%);
     background-size: 200% auto;
     position: fixed;
     bottom: 0;
@@ -2002,4 +2002,58 @@ p {
             max-width: 1280px;
         }
     }
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #556B2F;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.4);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-button:hover {
+  background-color: #6B8E23;
+  box-shadow: 0 6px 16px rgba(85, 107, 47, 0.6);
+  transform: scale(1.1);
+  animation: none;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive WhatsApp Button */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 70px;
+    right: 15px;
+  }
+  
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
 }

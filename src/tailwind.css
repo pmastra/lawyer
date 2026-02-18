@@ -78,22 +78,22 @@ p {
   @apply text-theme-color;
 }
 .gradient-btn {
-  background-image: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+  background-image: linear-gradient(to right, #556B2F 0%, #6B8E23 50%, #556B2F 100%);
   background-size: 200% auto;
   overflow: hidden;
 }
 .gradient-btn-2 {
-  background-image: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+  background-image: linear-gradient(to right, #556B2F 0%, #6B8E23 50%, #556B2F 100%);
 }
 .gradient-btn:hover {
   background-position: right center;
   @apply shadow-xl;
 }
 .main-btn {
-  @apply inline-block px-6 py-3 font-medium text-white duration-300 bg-blue-600 rounded-lg;
+  @apply inline-block px-6 py-3 font-medium text-white duration-300 bg-green-800 rounded-lg;
 }
 .main-btn:hover {
-  @apply bg-blue-400;
+  @apply bg-green-900;
 }
 
 .header-hero {
@@ -110,7 +110,7 @@ p {
 }
 
 .section-title .line {
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: linear-gradient(#556B2F 0%, #6B8E23 100%);
   @apply w-40 h-1 mb-3;
 }
 
@@ -178,13 +178,13 @@ p {
   @apply absolute top-0 left-0 w-full h-full transform -rotate-45;
 }
 .counter-color-1::before {
-  background-image: linear-gradient(#33c8c1 0%,#119bd2 100%);
+  background-image: linear-gradient(#556B2F 0%,#6B8E23 100%);
 }
 .counter-color-2::before {
-  background-image: linear-gradient(#fe8464 0%,#fe6e9a 100%);
+  background-image: linear-gradient(#6B8E23 0%,#9da837 100%);
 }
 .counter-color-3::before {
-  background-image: linear-gradient(#361cc1 0%,#2e82ef 100%);
+  background-image: linear-gradient(#9da837 0%,#7cb342 100%);
 }
 
 
@@ -204,7 +204,7 @@ p {
 }
 .team-social ul::before {
   content: '';
-  background-image: linear-gradient(#fe8464 0%,#fe6e9a 100%);
+  background-image: linear-gradient(#556B2F 0%,#6B8E23 100%);
   z-index: -1;
   @apply absolute top-0 left-0 invisible w-full h-full duration-300 opacity-0;
 }
@@ -296,11 +296,65 @@ p {
 }
 
 .back-to-top {
-  background-image: linear-gradient(to right, #361cc1 0%,#2e82ef 100%);
+  background-image: linear-gradient(to right, #556B2F 0%,#6B8E23 100%);
   background-size: 200% auto;
   @apply fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-8 mr-8 overflow-hidden text-white duration-300 rounded;
 }
 .back-to-top:hover {
   @apply bg-right;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #556B2F;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(85, 107, 47, 0.4);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-button:hover {
+  background-color: #6B8E23;
+  box-shadow: 0 6px 16px rgba(85, 107, 47, 0.6);
+  transform: scale(1.1);
+  animation: none;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive WhatsApp Button */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 70px;
+    right: 15px;
+  }
+  
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
 }
 

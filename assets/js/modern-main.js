@@ -79,7 +79,6 @@ class SmoothScroll {
 class StickyNavbar {
     constructor() {
         this.navbar = $('.navbar-area');
-        this.logo = $('.navbar-brand img');
         this.scrollThreshold = 20;
         this.init();
     }
@@ -92,14 +91,8 @@ class StickyNavbar {
             
             if (scrollPosition >= this.scrollThreshold) {
                 this.navbar.classList.add('sticky');
-                if (this.logo) {
-                    this.logo.src = 'assets/images/Estudio-Logo.png';
-                }
             } else {
                 this.navbar.classList.remove('sticky');
-                if (this.logo) {
-                    this.logo.src = 'assets/images/Estudio-Logo-white.png';
-                }
             }
         }, 100);
 

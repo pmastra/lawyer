@@ -142,6 +142,29 @@ class MobileMenu {
     }
 }
 
+// ===== Practice Details Accordion =====
+
+class PracticeDetailsAccordion {
+    constructor() {
+        this.items = $$('.practice-detail');
+        this.init();
+    }
+
+    init() {
+        this.items.forEach(item => {
+            item.addEventListener('toggle', () => {
+                if (!item.open) return;
+
+                this.items.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.open = false;
+                    }
+                });
+            });
+        });
+    }
+}
+
 // ===== Active Section Highlight =====
 
 class SectionHighlight {
@@ -395,6 +418,7 @@ class App {
         new SmoothScroll();
         new StickyNavbar();
         new MobileMenu();
+        new PracticeDetailsAccordion();
         new SectionHighlight();
         new BackToTop();
         new AnimateOnScroll();

@@ -152,13 +152,15 @@ class PracticeDetailsAccordion {
 
     init() {
         this.items.forEach(item => {
-            item.addEventListener('toggle', () => {
-                if (!item.open) return;
+            const summary = $('summary', item);
+
+            summary?.addEventListener('click', () => {
+                // A closed item will open immediately after this click. Close
+                // the rest first so only that item can remain expanded.
+                if (item.open) return;
 
                 this.items.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.open = false;
-                    }
+                    if (otherItem !== item) otherItem.removeAttribute('open');
                 });
             });
         });

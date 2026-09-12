@@ -249,6 +249,29 @@ body {
     }
 }
 
+@media (max-width: 1023px) {
+    .navbar-area .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-area .navbar-collapse {
+        border: 1px solid rgba(215, 177, 92, 0.48);
+        border-radius: 0.7rem;
+        background: #081c14;
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.32);
+    }
+
+    .navbar-area .navbar-nav .nav-item a {
+        display: block;
+        color: #f8f2e4;
+    }
+
+    .navbar-area .navbar-nav .nav-item.active a,
+    .navbar-area .navbar-nav .nav-item a:hover {
+        color: #d7b15c;
+    }
+}
+
 .header-hero {
     background-image: radial-gradient(circle at 15% 15%, rgba(12, 75, 53, 0.72), transparent 36%), linear-gradient(135deg, #050806 0%, #0a2117 55%, #050806 100%) !important;
 }

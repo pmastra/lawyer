@@ -303,6 +303,17 @@ body {
     text-align: center;
 }
 
+.hero-service-mode {
+    margin: 0 0 2rem;
+    color: #f8f2e4;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.12rem, 2vw, 1.45rem);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
 .header-hero-content h1 {
     color: #f8f2e4;
     font-family: Georgia, 'Times New Roman', serif;
@@ -664,44 +675,20 @@ body {
     font-size: 0.95rem;
 }
 
-/* Back to Top Button */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 999;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--gradient-primary);
-    color: white;
-    border-radius: var(--radius-full);
-    text-decoration: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: all var(--transition-base);
-    box-shadow: var(--shadow-lg);
-}
-
-.back-to-top.visible,
-.back-to-top:hover {
-    opacity: 1;
-    visibility: visible;
-}
-
-.back-to-top:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-xl);
-}
-
 /* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
-    bottom: 130px;
+    bottom: 30px;
     right: 30px;
     z-index: 998;
+    transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base);
+}
+
+.whatsapp-float.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
 }
 
 .whatsapp-button {
@@ -920,7 +907,7 @@ p {
     }
     
     .whatsapp-float {
-        bottom: 110px;
+        bottom: 20px;
         right: 20px;
     }
     
@@ -930,13 +917,6 @@ p {
         font-size: 1.5rem;
     }
     
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-    }
-
     .services-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.85rem;

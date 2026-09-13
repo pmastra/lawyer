@@ -205,44 +205,23 @@ class SectionHighlight {
     }
 }
 
-// ===== Back to Top Button =====
+// ===== Floating WhatsApp Visibility =====
 
-class BackToTop {
+class FloatingWhatsAppVisibility {
     constructor() {
-        this.button = $('.back-to-top');
-        this.scrollThreshold = 600;
+        this.button = $('.whatsapp-float');
+        this.services = $('#features');
         this.init();
     }
 
     init() {
-        if (!this.button) return;
+        if (!this.button || !this.services || !('IntersectionObserver' in window)) return;
 
-        const handleScroll = throttle(() => {
-            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollPosition >= this.scrollThreshold) {
-                this.button.classList.add('visible');
-                this.button.style.opacity = '1';
-                this.button.style.visibility = 'visible';
-            } else {
-                this.button.classList.remove('visible');
-                this.button.style.opacity = '0';
-                this.button.style.visibility = 'hidden';
-            }
-        }, 150);
+        const observer = new IntersectionObserver(([entry]) => {
+            this.button.classList.toggle('is-hidden', entry.isIntersecting);
+        }, { threshold: 0.15 });
 
-        this.button.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        
-        // Initialize visibility
-        handleScroll();
+        observer.observe(this.services);
     }
 }
 
@@ -422,7 +401,7 @@ class App {
         new MobileMenu();
         new PracticeDetailsAccordion();
         new SectionHighlight();
-        new BackToTop();
+        new FloatingWhatsAppVisibility();
         new AnimateOnScroll();
         new ParticlesBackground();
         new PerformanceMonitor();

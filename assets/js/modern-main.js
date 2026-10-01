@@ -171,7 +171,7 @@ class PracticeDetailsAccordion {
 
 class SectionHighlight {
     constructor() {
-        this.sections = $$('section[id]');
+        this.sections = $$('section[id], footer[id]');
         this.navLinks = $$('.page-scroll');
         this.init();
     }
